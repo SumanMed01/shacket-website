@@ -1,0 +1,286 @@
+CHANGES YOU NEED TO DO IN  ->  index.html
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="nav">
+        <h4>About</h4>
+        <h4>News</h4>
+        <h4>Cart</h4>
+        <i class="ri-shopping-bag-line"></i>
+      </div>
+      <div id="center">
+        <h1>
+          Lightly padded, <br>
+          quilted jacket in <br>
+          recycled polyester.
+        </h1>
+        <div id="center2">
+          <p>
+            Exclusive brands aspire for the label haute
+            couture, but the term is technically limited to members of the Chambre Syndicale de la Haute
+          </p>
+          <div id="right">
+            <div class="elem">
+              <a href="#">Add to cart</a>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="elem">
+              <a href="#">Product details</a>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="elem">
+              <a href="#">Shipping</a>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="bottom"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+CHANGE YOU NEED TO DO IN   ->   style.css
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #ececec;
+}
+#nav{
+    width: 100%;
+    height: 100px;
+   /* background-color: transparent; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0 30px;
+}
+#nav h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+#nav i{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#center{
+    background-color: #ececec;
+    width: 100%;
+    padding: 40px 80px;
+}
+#center h1{
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 85px;
+}
+#center2{
+    
+    /*background-color: red;*/
+    width: 100%;
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+}
+#center2 p{
+    font-size: 1.6vw;
+    font-weight: 600;
+    line-height: normal;
+    width: 35%;
+}
+#right{
+    width: 20%;
+    
+}
+.elem{
+    /*background-color: yellow;*/
+   /* margin: 5px;*/
+    padding: 20px 0;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.elem a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+.elem i{
+    font-size: 25px;
+    font-weight: 500;
+    opacity: 0;
+}
+.elem:hover i{
+    opacity: 1;
+}
+.elem:hover a{
+    text-decoration: underline;
+}
+#bottom{
+    height: 35%;
+    width: 100%;
+    /* background-color: red; */
+    background-image: url("https://images.unsplash.com/photo-1468112014733-deb9e1f8ddd2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: 0 10%;
+}
+
+
+@media (max-width : 426px) {
+    #nav{
+        width: 100%;
+        height: 7vh;
+       /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+        padding: 0 30px;
+    }
+    #nav h4{
+        font-size: 2vh;
+        font-weight: 600;
+    }
+    #nav i{
+        height: 2vh;
+        width: 2vh;
+        background-color: black;
+        color: white;
+        font-size: 2vh;
+        font-weight: 500;
+        padding: 2vh;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #center{
+        height: fit-content;
+        width: 100vw;
+        /* background-color: beige; */
+        padding: 1vh 1vh;
+        overflow: hidden;
+    }
+    #center h1{
+        /* background-color: yellowgreen; */
+        width: 100vw;
+        margin-left: 0;
+        font-size: 8vh;
+        font-weight: 500;
+        line-height:normal;
+    }
+    #center2{
+        /* background-color: blueviolet; */
+        width: 100%;
+        margin-top: 42px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    #center2 p{
+        text-align: center;
+        font-size: 4vh;
+        font-weight: 600;
+        line-height: normal;
+        padding: 1vh;
+        width: 100%;
+        margin-top: 5vh;
+    }
+    #right{
+        width: 20%;   
+    }
+    .elem{
+        /* background-color: yellow; */
+        padding: 3vh 0vh;
+        border-top: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 100vw;
+    }
+    .elem:nth-last-child(1)
+    {
+        border-bottom: 2px solid black;
+    }
+    .elem a{
+        color: black;
+        text-decoration: none;
+        font-size: 5vh;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .elem i{
+        font-size: 25px;
+        font-weight: 500;
+        opacity: 100;
+    }
+    .elem:hover i{
+        opacity: 100;
+    }
+    .elem:hover a{
+        text-decoration: none;
+    }
+}
+
+
+
+SUGGESTION -> Use Javascript so that the webiste should interact with the clients.
+
+
+
+
+
+-------------------------------------------------------------------------------------------------x-------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
